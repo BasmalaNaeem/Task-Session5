@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    background-color: var(--newcolor);
+}
+:root{
+    --maincolor: #3a52a4;
+    --secondcolor: #44b750;
+    --redcolor:#da382d;
+    --newcolor:#e7ebf1;
+}
+.cont {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 80px auto;
+    grid-template-areas: "nav nav" "aside main";
+    row-gap: 30px;
+}
+
+nav {
+    font-size: 50px;
+    padding: 20px;
+    grid-area: nav;
+    color: white;
+    background-color:var(--maincolor);
+}
+aside {
+    grid-area: aside;
+    background-color: var(--newcolor);
+}
+
+main{    
+    grid-area: main;
+    background-color: var(--newcolor);
+}
+.check {
+    display: grid;
+    width: 190px;
+    grid-template-columns:repeat(2,auto);
+    row-gap: 8px;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price p {
+    font-size: 13px;
+}
+#range {
+    width: 100%;
+
+}
+.cont1 {
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0px auto;
+    box-shadow: 0 0 10px 0px;
+}
+.product {
+    background-color: white;
+    width: 200px;
+    height: 250px;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    grid-row: 25px;
+    row-gap: 30px;
+}
+.product2 {
+    /* background-color: blue; */
+    grid-column: span 2;
+}
+.image img{
+    width: 200px;
+    border-radius: 10px;
+}
+.image::after{
+    content: "25$";
+    background-color: var(--secondcolor);
+    color: white;
+    padding: 3px 15px;
+    font-size: 12px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 0px inset;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.image {
+    position: relative;
+}
+.details p {
+    color: rgb(0, 0, 0,0.5);
+}
+.product2 {
+    width: 550px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: auto;
+    column-gap: 10px;
+}
+button {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+.but1 {
+    background-color: var(--secondcolor);
+}
+.but2 {
+    background-color: var(--maincolor);
+}
+span {
+    color: red;
+}
+.contant p {
+    font-size: 15px;
+}
+.contant {
+    position: relative;
+}
+.contant::after {
+    content: "Suggested For You";
+    background-color: var(--redcolor);
+    color: white;
+    padding: 3px 15px;
+    font-size: 12px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 0px inset;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.pad {
+    padding-bottom: 15px;
+}
+.product2 img {
+    height: 97%;
+    width: 200px;
+}
